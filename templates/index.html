@@ -1,8 +1,192 @@
 <!-- templates/index.html -->
 {% extends "base.html" %}
 
-{% block title %}Index · Flask Azure Quickstart{% endblock %}
+{% block title %}IMG Compass{% endblock %}
 
 {% block content %}
-<h1>Hello World!</h1>
+<div class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-0">
+        
+            </div>
+            <div class="col-12 col-md-6 my-5">
+                <h1 class="text-white display-2"><strong>The support you need to begin your medical career in the UK</strong></h1>
+                <button type="button" class="btn btn-primary">FIND OUT MORE</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container floating-box text-white rounded">
+    <div class="row bg-primary g-5">
+        <div class="col-12 col-md-4">
+            <div class="row">
+                <div class="col-2 my-auto">
+                    <img src="/static/icons/guidance.svg" height="64">
+                </div>
+                <div class="col-10">
+                    <h3>Guidance</h3>
+                    <p>Lorem ipsum dolor sit amet, tetuer adipiscing elit, sed diam</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 my-auto border-end border-start">
+            <div class="row">
+                <div class="col-2 my-auto">
+                    <img src="/static/icons/education.svg" height="64">
+                </div>
+                <div class="col-10 mw-1">
+                    <h3>Education</h3>
+            <p>Lorem ipsum dolor sit amet, tetuer adipiscing elit, sed diam</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 my-auto">
+            <div class="row">
+                <div class="col-2 my-auto">
+                    <img src="/static/icons/training.svg" height="64">
+                </div>
+                <div class="col-10">
+                    <h3>Training</h3>
+                    <p>Lorem ipsum dolor sit amet, tetuer adipiscing elit, sed diam</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row py-5 my-5">
+        <div class="col-12 col-md-6 my-auto">
+            <h1>Book a one-to-one session</h1>
+            <p>LEARNMORE <i class="bi bi-arrow-right"></i></p>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="row">
+                <p>Access all resources provided by Dr Joyshri Sarangi and Dr Gajendren Kanagalingam</p>
+                <div class="col-6">
+                    <h5>Our Vision</h5>
+                    <ul class="custom-list-primary">
+                        <li>Lorem ipsum dolor sit amet,</li>
+                        <li>consectetuer adipiscing elit</li>
+                        <li>sed diam nonummy</li>
+                    </ul>
+                </div>
+                <div class="col-6">
+                    <h5>Our Mission</h5>
+                    <ul class="custom-list-primary">
+                        <li>Lorem ipsum dolor sit amet,</li>
+                        <li>consectetuer adipiscing elit</li>
+                        <li>sed diam nonummy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-secondary">
+    <div class="container">
+        <div class="row join-us round-bg text-white">
+            <div class="col-12 col-md-6 my-auto">
+                <h1>Join our community for all the resources you need </h1>
+                <p>New to the whole UK IMG path?<br> Get started with our one page overview - the IMG Crash Course.</p>
+                <ul class="custom-list-secondary">
+                    <li>Lorem ipsum dolor sit amet,</li>
+                    <li>consectetuer adipiscing elit</li>
+                    <li>sed diam nonummy</li>
+                </ul>
+                <a class="text-primary">Get started <i class="bi bi-arrow-right"></i></a>
+            </div>
+            <div class="col-12 col-md-6 my-auto">
+                <div class="row g-5 mb-5">
+                    <div class="col-6 border-end">
+                        <h5 class="text-primary">HR Law</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+                    </div>
+                    <div class="col-6">
+                        <h5 class="text-primary">Occupational Health</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-6 border-end">
+                        <h5 class="text-primary">Working in the UK</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+                    </div>
+                    <div class="col-6">
+                        <h5 class="text-primary">GMC Registration</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="py-5 bg-primary text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-2 mb-3">
+          <h5>About IMG Compass</h5>
+          <p>Lorem ipsum dolor sit amet, tetuer adipiscing elit, sed diam</p>
+          <p><i class="bi bi-envelope"></i> info@imgcompass.com</p>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3 offset-md-1">
+          <h5>Resources</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Privacy Policy</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-2 mb-3">
+          <h5>Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Log in</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Register</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Contact us</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 mb-3">
+          <form>
+            <h5>IMG Factsheet, straight to your inbox</h5>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="email" class="visually-hidden">Email address *</label>
+              <input id="email" type="email" class="form-control" placeholder="Email address *" name="email" required>
+              <label for="first_name" class="visually-hidden">First Name</label>
+              <input id="first_name" type="text" class="form-control" placeholder="First Name" name="first_name">
+            </div>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2 my-2">
+                <label for="exampleSelect" class="visually-hidden">Occupation</label>
+                    <select class="form-select" id="exampleSelect">
+                    <option selected disabled hidden>Occupation</option>
+                    <option value="Medical Graduate">Medical Graduate</option>
+                    <option value="Medical Student">Medical Student</option>
+                    <option value="GP">GP</option>
+                    <option value="NHS consultant">NHS consultant</option>
+                    <option value="NHS nurse">NHS nurse</option>
+                    <option value="Other">Other</option>
+                    </select>
+                <button class="btn btn-primary" type="button">Subscribe</button>
+            </div>
+            <a href="#" class="text-white">Consent statement and privacy policy</a>
+          </form>
+        </div>
+      </div>
+    </div>
+</footer>
+
+<div class="text-center">
+    <p class="my-2">Copyright © IMG Compass 2024  |  <a href="https://www.tcssolutions.co.uk/" target="_blank">www.tcssolutions.co.uk</a></p>
+</div>
+
 {% endblock %}

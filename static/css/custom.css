@@ -1,0 +1,103 @@
+/* Fonts */
+@font-face {
+    font-family: 'RedHatDisplay';
+    src: url('/static/fonts/RedHatDisplay-VariableFont_wght.ttf') format('truetype');
+    font-style: normal;
+}
+
+/* Custom bullet points */
+ul.custom-list-primary {
+    list-style: none;
+  }
+  
+ul.custom-list-primary li::before {
+    content: url('/static/icons/target.svg'); /* use an image or svg */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+ul.custom-list-secondary {
+    list-style: none;
+  }
+  
+ul.custom-list-secondary li::before {
+    content: url('/static/icons/target-white.svg'); /* use an image or svg */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Override Bootstrap's fonts */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'RedHatDisplay', serif;
+    font-weight: 700; /* Bold by default for headers */
+}
+
+/* Body: Manrope Regular and Bold */
+body {
+    font-family: 'RedHatDisplay', sans-serif;
+    font-weight: 400; /* Regular by default for body text */
+    color: #000F9F !important;
+}
+
+p, span, li, a, div, button {
+    font-family: 'RedHatDisplay', sans-serif;
+}
+
+.text-primary {
+    color: #000F9F !important;
+    text-decoration: none;
+}
+
+/* Specific styles for bold text in the body */
+strong, b {
+    font-weight: 700; /* Bold */
+}
+
+.floating-box .bg-primary{
+    height: 200px;
+    margin-top: -100px;
+}
+
+.bg-primary {
+    background-color: #000F9F !important;
+}
+
+.bg-secondary{
+    background-color: #00A19C !important;
+}
+
+.btn-primary {
+    background-color: #00A19B;
+    border-color: #00A19B !important;
+    color: #FFFFFF;
+    min-width: 100px;
+}
+
+.btn-secondary {
+    background-color: #000F9F;
+    border-color: #000F9F !important;
+    color: #FFFFFF;
+    min-width: 100px;
+}
+
+/* Images for background */
+.hero {
+    background-image:   linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                        url(/static/images/hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+}
+
+.round-bg {
+    background-image:   url(/static/images/join-us.png);
+    background-size: auto;
+    background-position: left;
+    background-repeat: no-repeat;
+    min-height: 50vh;
+}
