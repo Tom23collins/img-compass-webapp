@@ -8,6 +8,7 @@
 /* Custom bullet points */
 ul.custom-list-primary {
     list-style: none;
+    padding-left: 0.5rem !important;
   }
   
 ul.custom-list-primary li::before {

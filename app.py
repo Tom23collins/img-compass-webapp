@@ -94,6 +94,10 @@ def login():
     error = "Invalid email or password."
     return render_template('login.html', error=error)
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html', user=flask_login.current_user)
+
 @app.route('/logout')
 def logout():
     flask_login.logout_user()
