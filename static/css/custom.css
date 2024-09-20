@@ -48,8 +48,15 @@ p, span, li, a, div, button {
     font-family: 'RedHatDisplay', sans-serif;
 }
 
-.text-primary {
-    color: #000F9F !important;
+.text-primary,
+.nav-link {
+    color: #000F9F;
+    text-decoration: none;
+}
+
+.text-secondary,
+.nav-link.active {
+    color: #00A19C;
     text-decoration: none;
 }
 

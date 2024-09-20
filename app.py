@@ -55,7 +55,9 @@ def user_loader(user_id):
 
 @app.route('/')
 def index():
-    return render_template('index.html', user=flask_login.current_user)
+    return render_template('index.html', 
+                           user=flask_login.current_user,
+                           current_page='index')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
@@ -96,7 +98,27 @@ def login():
 
 @app.route('/contact')
 def contact():
-    return render_template('contact.html', user=flask_login.current_user)
+    return render_template('contact.html', 
+                           user=flask_login.current_user, 
+                           current_page='contact')
+
+@app.route('/about')
+def about():
+    return render_template('about.html', 
+                           user=flask_login.current_user, 
+                           current_page='about')
+
+@app.route('/skills')
+def skills():
+    return render_template('skills.html', 
+                           user=flask_login.current_user,
+                           current_page='skills')
+
+@app.route('/support')
+def support():
+    return render_template('support.html', 
+                           user=flask_login.current_user,
+                           current_page='support')
 
 @app.route('/logout')
 def logout():
