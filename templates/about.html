@@ -1,8 +1,34 @@
 <!-- templates/about.html -->
 {% extends "base.html" %}
 
-{% block title %}About us{% endblock %}
+{% block title %}About{% endblock %}
 
 {% block content %}
-<p>About us page</p>
+<div class="container">
+    <div class="row text-center">
+        <h2>About Us</h2>
+        <h6>IMG Compass is a website to help guide International Medical Graduates working in the NHS<br>teaching the key information they don't cover in medical school such as</h6>
+        <div class="text-center">
+            <ul class="custom-list-primary" style="display: inline-block; text-align: left;">
+                <li>Resolving conflict in the workplace</li>
+                <li>What to do in a crisis</li>
+                <li>Protecting your GMC registration</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-3">
+            <img src="{{ url_for('static', filename='images/joyshri.png') }}" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-9 my-auto">
+            <h3>Dr Joyshri Sarangi</h3>
+            <h6>Occupational medical consultant and Practicing GP</h6>
+            <p>Dr Sarangi has been a practicing consultant for over 30 years and is experienced in solving work place problems related to junior and senior doctors working the uk NHS.</p>
+            <ul class="custom-list-primary">
+                <li>Managing stress issues arrising out of problems due to tensions at work</li>
+                <li>Managing crisis</li>
+            </ul>
+        </div>
+    </div>
+</div>
 {% endblock %}

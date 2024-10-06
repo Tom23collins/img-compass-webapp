@@ -48,7 +48,10 @@ p, span, li, a, div, button {
     font-family: 'RedHatDisplay', sans-serif;
 }
 
-.text-primary,
+.text-primary {
+    color: #000F9F !important;
+}
+
 .nav-link {
     color: #000F9F;
     text-decoration: none;
@@ -59,6 +62,7 @@ p, span, li, a, div, button {
     color: #00A19C;
     text-decoration: none;
 }
+
 
 /* Specific styles for bold text in the body */
 strong, b {
